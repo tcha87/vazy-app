@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Classroom Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card >
+    
+      <ion-card-content>
+          <ion-img src="https://assets.superbalistcdn.co.za/500x720/filters:quality(75):format(jpg)/spree/product/s/p/spree2017april24picssck1826.jpg"></ion-img>
+          <h2></h2>
+          <div class="lsd"><ion-icon name="appstore"></ion-icon> Presented by : {{product.product.store_name}}</div>
+          <div [innerHTML]="product.product.description"></div>
+          <ion-grid>
+            <ion-row class="price">
+              <ion-col>
+                <div>
+                    <!-- <ion-button  shape="round" class="btn" expand="full" (click)="addToCart(product)">Wear it</ion-button> -->
+                </div>
+              </ion-col>
+              <ion-col>
+                <div class="cost">
+                 Price : KSh {{product.product.price}}
+                </div>
+              </ion-col>
+            
+            </ion-row>
+          </ion-grid>
+
+        
+      </ion-card-content>
+    </ion-card>
+
+
+ 
+</ion-content>
